@@ -1,161 +1,345 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ruiza Portfolio</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tann - Portolio Website</title>
 
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    </head>
-    <body>
-
-
-        <div class="grid"></div>
-
-        <div class="node node1"></div>
-        <div class="node node2"></div>
-        <div class="node node3"></div>
-        <div class="node node4"></div>
-
-        <div class="binary b1">010101</div>
-        <div class="binary b2">110010</div>
-        <div class="binary b3">101101</div>
-
-        <div class="tech-icon code">&lt;/&gt;</div>
-        <div class="tech-icon cloud">☁</div>
-        <div class="tech-icon database">🗄</div>
-        <div class="tech-icon chart">📊</div>
-
-        <div class="cyber-line line1"></div>
-        <div class="cyber-line line2"></div>
-        <div class="cyber-line line3"></div>
-
-        <!-- HEADER -->
-
-        <header>
-            <nav class="navbar">
-
-                <div class="logo">
-                    <span class="white">Ru</span>
-                    <span class="cyan">iz</span>
-                    <span class="purple">a</span>
-                </div>
-
-                <ul class="nav-links">
-                    <li><a href="#" class="active">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#certificates">CERTIFICATES</a></li>
-                    <li><a href="#contacts">CONTACT</a></li>
-                </ul>
-
-            </nav>
-        </header>
-
-        <!-- HERO -->
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <div class="tagline">
-                ● PORTFOLIO • INFORMATION SYSTEMS
+    <link rel="stylesheet" 
+    href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class = "header">
+        <nav class = "navbar">
+            <div class = "logo">
+                <h2>@Tann.</h2>
             </div>
 
-            <h1 class="hero-name">
-                CARL<br>
-                CHRISTIAN<br>
-                DELAPAS
-            </h1>
+            <ul class = "nav-links">
+                <li><a href="#home" >Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-            <h2 class="hero-role">
-                // Aspiring Information Systems Student
-            </h2>
+            <a href="#" class = "btn">Download CV</a>
+        </nav>
+    </header>
 
-            <p class="hero-description">
-                A BSIS student passionate about technology,
-                business processes, and developing innovative
-                digital solutions that solve real-world problems.
+    <section id = "home" class = "hero">
+        <div class = "hero-content">
+            
+            <h1> Hello, <span>I'm Tann</span></h1>
+            <h3> BSIS Student | Aspiring Developer</h3>
+
+            <p>Passionate about web development, software development,
+                and emerging technologies.
             </p>
+           
+            <div class = "hero-buttons">
+                <a href = "#project" class = "btn">View My Work</a>
+                <a href = "#contact" class = "btn btn-outline">Contact Me</a>
+            </div>
 
-            <div class="buttons">
-                <a href="#" class="btn-primary">
-                    View Projects       
-                </a>
+            <div class="hero-image">
+                <img src = "assets/laptop-image.png" alt = "Hero Image">
+            </div>
 
-                <a href="#" class="btn-secondary">
+        </div>
+    </section>
+
+    <section id = "about" class = "about">
+        <div class = "about-content">
+           
+            <div class = "about text">
+
+                <h4>About Me</h4>
+
+                <h2>Get to know me!</h2>
+
+                <p>
+                    Hi, I'm Carl Christian N. Delapas! I'm a BSIS student at the Davao del Norte State College.
+                    I have a strong passion for web development, software development, and emerging technologies.
+                    I am eager to learn and grow in the field of information systems, and I am excited to 
+                    contribute my skills and knowledge to create innovative solutions.
+                </p>
+                <div class = "about-info">
+                    <p><i class = "fas fa-user"></i> Age: 19</p>
+                    <p><i class = "fas fa-location-dot"></i> Location: Davao del Norte, Philippines</p>
+                    <p><i class = "fas fa-envelope"></i> Email: carlchristiandelapas0@gmail.com</p>
+                    <p><i class = "fas fa-heart"></i> Interests: Web Developer</p>
+                </div>
+
+            </div>
+
+            <div class = "about-image">
+                <img src = "assets/profile.jpg" alt = "Profile">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+
+    <h4>MY SKILLS</h4>
+    <h2>Technologies I Work With</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card html">
+            <i class="fab fa-html5"></i>
+            <h3>HTML</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-php"></i>
+            <h3>PHP</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <h3>MySQL</h3>
+        </div>
+
+        <div class="soft-skills">
+
+        <h3>Soft Skills</h3>
+
+        <div class="soft-skills-list">
+            <span>Communication</span>
+            <span>Teamwork</span>
+            <span>Problem Solving</span>
+            <span>Critical Thinking</span>
+            <span>Adaptability</span>
+            <span>Time Management</span>
+            <span>Leadership</span>
+        </div>
+
+    </div>
+
+    <section id="projects" class="projects">
+
+        <h4>MY PROJECTS</h4>
+        <h2>Some of My Recent Works</h2>
+
+        <div class="projects-grid">
+
+            <!-- Laundromat Management System -->
+            <div class="project-card">
+
+                <img src="assets/laundromat.jpg" alt="Laundromat Management System">
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        MANAGEMENT SYSTEM
+                    </span>
+
+                    <h3>Laundromat Management System</h3>
+
+                    <p>
+                        A desktop-based management system developed to streamline
+                        laundry shop operations, customer records, service tracking,
+                        payment processing, and report generation.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>NetBeans</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Elevation Fitness Gym -->
+            <div class="project-card">
+
+                <img src="assets/elevation-fitness.jpg" alt="Elevation Fitness Gym">
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        CLIENT PROFILING SYSTEM
+                    </span>
+
+                    <h3>Elevation Fitness Gym Client Profiling System</h3>
+
+                    <p>
+                        A client profiling and membership management system designed
+                        to store member information, fitness records, and profile data
+                        for efficient gym operations.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>NetBeans GUI</span>
+                        <span>MySQL</span>
+                        <span>ISTP</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Maycel Hometel -->
+            <div class="project-card">
+
+                <img src="assets/maycel-hometel.jpg" alt="Maycel Hometel">
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        BOOKING SYSTEM
+                    </span>
+
+                    <h3>Maycel Hometel Booking Management System</h3>
+
+                    <p>
+                        A reservation management system developed to simplify room
+                        bookings, guest records, accommodation monitoring, and
+                        reservation tracking for hotel operations.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>NetBeans GUI</span>
+                        <span>MySQL</span>
+                        <span>ISTP</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Portfolio Website -->
+            <div class="project-card">
+
+                <img src="assets/portfolio.jpg" alt="Portfolio Website">
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        WEB DEVELOPMENT
+                    </span>
+
+                    <h3>Personal Portfolio Website</h3>
+
+                    <p>
+                        A responsive portfolio website showcasing my projects,
+                        skills, achievements, and experiences using a modern
+                        purple-themed user interface.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>VS Code</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="achievements" class="achievements">
+
+        <h4>MY ACHIEVEMENTS</h4>
+        <h2>Certificates & Achievements</h2>
+
+        <div class="achievement-grid">
+
+            <div class="achievement-card">
+                <img src="assets/nc2.jpg">
+                <div class="achievement-content">
+                    <h3>NC II Certificate</h3>
+                    <p>National Certificate II in Information Technology-related skills and industry standards.</p>
+                </div>
+            </div>
+
+            <div class="achievement-card">
+                <img src="assets/bench-yelling.jpg">
+                <div class="achievement-content">
+                    <h3>Champion on Bench Yelling</h3>
+                    <p>Champion in the Bench Yelling Competition, demonstrating leadership and teamwork.</p>
+                </div>
+            </div>
+
+            <div class="achievement-card">
+                <img src="assets/gunit.jpg">
+                <div class="achievement-content">
+                    <h3>Best Original Story - "GUNIT"</h3>
+                    <p>Awarded Best Original Story for creativity and storytelling excellence.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact">
+
+        <div class="contact-box">
+
+            <div class="contact-left">
+
+                <h4>LET'S CONNECT</h4>
+
+                <h2>Let's Build Something Great Together!</h2>
+
+                <p>
+                    I'm always open to new opportunities,
+                    collaborations, and exciting projects.
+                </p>
+
+                <a href="mailto:yourgmail@gmail.com" class="contact-btn">
                     Contact Me
                 </a>
+
             </div>
 
-        </div>
+            <div class="contact-right">
 
-        <div class="hero-image">
-
-            <div class="circle-ring"></div>
-
-            <div class="profile-circle">
-                <img src="profile.jpg" alt="Profile">
-            </div>
-
-        </div>
-
-    </section>
-    <section class="about" id="about">
-
-        <h2 class="section-title">About Me</h2>
-
-        <div class="about-container">
-
-            <div class="about-text">
-                <p>
-                    I am <span>Delapas Carl Christian</span>, a 1st-year BSIS student at
-                    <span>Davao del Norte State College</span>. I am passionate about
-                    web development, database management, UI/UX design, and creating
-                    innovative digital solutions.
-                </p>
-
-                <p>
-                    Through academic projects and internships, I have gained
-                    experience in system development, project management, and
-                    software engineering. My goal is to become a professional
-                    IT specialist and contribute meaningful solutions through
-                    technology.
-                </p>
-            </div>
-
-            <div class="about-info">
-
-                <div class="info-row">
-                    <span>Name</span>
-                    <p>Delapas Carl Christian</p>
+                <div class="contact-info">
+                    <i class="fas fa-envelope"></i>
+                    <span>carlchristiandelapas0@gmail.com</span>
                 </div>
 
-                <div class="info-row">
-                    <span>Nickname</span>
-                    <p>Tann</p>
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                    <span>09XX XXX XXXX</span>
                 </div>
 
-                <div class="info-row">
-                    <span>School</span>
-                    <p>DNSC</p>
+                <div class="contact-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Davao del Norte, Philippines</span>
                 </div>
 
-                <div class="info-row">
-                    <span>Program</span>
-                    <p>BS Information Technology</p>
-                </div>
+                <div class="social-icons">
 
-                <div class="info-row">
-                    <span>Location</span>
-                    <p>Panabo City, Davao del Norte</p>
-                </div>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
 
-                <div class="info-row">
-                    <span>Interests</span>
-                    <p>Technology, Coding, UI Design</p>
+                    <a href="#"><i class="fab fa-github"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
                 </div>
 
             </div>
@@ -163,203 +347,15 @@
         </div>
 
     </section>
-    <section class="skills" id="skills">
 
-    <h2 class="section-title">Skills</h2>
+    <footer class="footer">
 
-    <div class="skills-container">
+    <p>
+        © 2026 Carl Christian N. Delapas | All Rights Reserved.
+    </p>
 
-        <div class="skill-card">
-            <h3>Frontend</h3>
-            <p>HTML, CSS, JavaScript</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Backend</h3>
-            <p>PHP, MySQL</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Programming</h3>
-            <p>Java, Python</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Tools</h3>
-            <p>Git, VS Code, XAMPP</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>UI/UX Design</h3>
-            <p>Figma, Canva</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Database</h3>
-            <p>MySQL, SQL Queries</p>
-        </div>
-
-    </div>
+</footer>
 
 </section>
-<section class="projects" id="projects">
-
-    <h2 class="section-title">Projects</h2>
-
-    <div class="projects-container">
-
-        <div class="project-card">
-
-            <img src="gym-project.png" alt="Elevation Fitness Gym">
-
-            <div class="project-content">
-
-                <h3>Elevation Fitness Gym Management System</h3>
-
-                <p>
-                    A CRUD-based gym management system developed
-                    to streamline member registration, membership
-                    tracking, payment management, coach assignment,
-                    and report generation for Elevation Fitness Gym.
-                </p>
-
-                <div class="project-tags">
-                    <span>Java</span>
-                    <span>MySQL</span>
-                    <span>CRUD</span>
-                    <span>NetBeans</span>
-                    <span>Swing</span>
-                </div>
-
-                <div class="project-buttons">
-                    <a href="#" class="github-btn">GitHub</a>
-                    <a href="#" class="view-btn">View Project</a>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<section class="certificates" id="certificates">
-
-    <h2 class="section-title">Certificates & Achievements</h2>
-
-    <div class="cert-container">
-
-        <!-- NC II -->
-        <div class="cert-card">
-            <img src="nc2.jpg" alt="NC II Certificate">
-
-            <div class="cert-content">
-                <h3>NC II Certificate</h3>
-                <p>
-                    National Certificate II demonstrating competency
-                    in Information Technology-related skills and industry standards.
-                </p>
-            </div>
-        </div>
-
-        <!-- ByteFest -->
-        <div class="cert-card">
-            <img src="bytefest.jpg" alt="ByteFest 3.0">
-
-            <div class="cert-content">
-                <h3>ByteFest 3.0 Participant</h3>
-                <p>
-                    Participated in ByteFest 3.0, showcasing innovation,
-                    collaboration, and technology skills.
-                </p>
-            </div>
-        </div>
-
-        <!-- Bench Yelling -->
-        <div class="cert-card">
-            <img src="bench-yelling.jpg" alt="Bench Yelling Champion">
-
-            <div class="cert-content">
-                <h3>Bench Yelling Champion</h3>
-                <p>
-                    Champion in the Bench Yelling Competition,
-                    demonstrating leadership, teamwork, and school spirit.
-                </p>
-            </div>
-        </div>
-
-        <!-- Gunit -->
-        <div class="cert-card">
-            <img src="gunit.jpg" alt="Best Original Story">
-
-            <div class="cert-content">
-                <h3>Best Original Story - "GUNIT"</h3>
-                <p>
-                    Awarded Best Original Story for "GUNIT",
-                    recognizing creativity, storytelling, and literary excellence.
-                </p>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-<section class="contact" id="contact">
-
-    <h2 class="section-title">Let's Connect</h2>
-
-    <div class="contact-container">
-
-        <div class="contact-info">
-
-            <h3>Contact Information</h3>
-
-            <p>
-                Feel free to reach out for projects,
-                collaborations, or opportunities.
-            </p>
-
-            <div class="contact-item">
-                <strong>Email</strong>
-                <span>carlchristiandelapas0@gmail.com</span>
-            </div>
-
-            <div class="contact-item">
-                <strong>GitHub</strong>
-                <span>github.com/yourgithub</span>
-            </div>
-
-            <div class="contact-item">
-                <strong>Facebook</strong>
-                <span>Carl Christian N. Delapas</span>
-            </div>
-
-            <div class="contact-item">
-                <strong>Phone</strong>
-                <span>09510858831</span>
-            </div>
-
-        </div>
-
-        <form class="contact-form">
-
-            <input type="text" placeholder="Your Name">
-
-            <input type="email" placeholder="Your Email">
-
-            <input type="text" placeholder="Subject">
-
-            <textarea placeholder="Your Message"></textarea>
-
-            <button type="submit">
-                Send Message
-            </button>
-
-        </form>
-
-    </div>
-
-</section>
-
-    </body>
-    </html>
+</body>
+</html>
